@@ -14,6 +14,9 @@
 
 <c:url value="/index.html" var="index"/>
 <c:url value="/about.html" var="about"/>
+<c:url value="/contact.html" var="contact"/>
+<c:url value="/reviews.html" var="reviews"/>
+<c:url value="/tech.html" var="tech"/>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
@@ -23,7 +26,16 @@
             <a href="${index}">Main</a>
             </li>
             <li>
-            <a href="${about}">About company</a>
+            <a href="${about}">Company</a>
+            </li>
+            <li>
+            <a href="${tech}">Technical assistance</a>
+            </li>
+            <li>
+            <a href="${contact}">Contact</a>
+            </li>
+            <li>
+            <a href="${reviews}">Reviews</a>
             </li>
             </ul>
         </div>
@@ -32,7 +44,7 @@
 <article itemscope itemtype="http://schema.org/Article">
 	<header class="jumbotron subhead" id="overview">
 	<div class="container">
-	<h1 itemprop="name">The company was founded 28.03.2017</h1>
+	<h1 itemprop="name">The company was founded in 2007. The main activity is the development of custom software.</h1>
 	</div>
 	</header>
 

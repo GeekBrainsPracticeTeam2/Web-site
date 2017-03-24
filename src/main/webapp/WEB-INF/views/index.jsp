@@ -17,16 +17,25 @@
 
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
-        <div class="container">
-            <ul class="nav navbar-nav">
-            <li>
-            <a href="${index}">Main</a>
-            </li>
-            <li>
-            <a href="${about}">About company</a>
-            </li>
-            </ul>
-        </div>
+           <div class="container">
+                   <ul class="nav navbar-nav">
+                   <li>
+                   <a href="${index}">Main</a>
+                   </li>
+                   <li>
+                   <a href="${about}">Company</a>
+                   </li>
+                   <li>
+                   <a href="${tech}">Technical assistance</a>
+                   </li>
+                   <li>
+                   <a href="${contact}">Contact</a>
+                   </li>
+                   <li>
+                   <a href="${reviews}">Reviews</a>
+                   </li>
+                   </ul>
+               </div>
     </div>
 </div>
 

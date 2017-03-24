@@ -14,13 +14,13 @@ import org.springframework.web.servlet.ModelAndView;
 import ru.koshevoy.service.HelloWorldService;
 
 @Controller
-public class WelcomeController {
+public class MainController {
 
-	private final Logger logger = LoggerFactory.getLogger(WelcomeController.class);
+	private final Logger logger = LoggerFactory.getLogger(MainController.class);
 	private final HelloWorldService helloWorldService;
 
 	@Autowired
-	public WelcomeController(HelloWorldService helloWorldService) {
+	public MainController(HelloWorldService helloWorldService) {
 		this.helloWorldService = helloWorldService;
 	}
 
