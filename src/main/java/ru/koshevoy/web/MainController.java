@@ -1,53 +1,32 @@
 package ru.koshevoy.web;
 
-import java.util.Map;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
-import ru.koshevoy.service.HelloWorldService;
+import ru.koshevoy.service.ReviewService;
 
 @Controller
 public class MainController {
 
 	private final Logger logger = LoggerFactory.getLogger(MainController.class);
-	private final HelloWorldService helloWorldService;
+	private final ReviewService reviewService;
 
 	@Autowired
-	public MainController(HelloWorldService helloWorldService) {
-		this.helloWorldService = helloWorldService;
+	public MainController(ReviewService reviewService) {
+		this.reviewService = reviewService;
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String index(Map<String, Object> model) {
+	public String index() {
 
 		logger.debug("index() is executed!");
 
-		model.put("title", helloWorldService.getTitle(""));
-		model.put("msg", helloWorldService.getDesc());
-		
 		return "index";
 	}
 
-	@RequestMapping(value = "/hello/{name:.+}", method = RequestMethod.GET)
-	public ModelAndView hello(@PathVariable("name") String name) {
-
-		logger.debug("hello() is executed - $name {}", name);
-
-		ModelAndView model = new ModelAndView();
-		model.setViewName("index");
-		
-		model.addObject("title", helloWorldService.getTitle(name));
-		model.addObject("msg", helloWorldService.getDesc());
-		
-		return model;
-
-	}
 
 }

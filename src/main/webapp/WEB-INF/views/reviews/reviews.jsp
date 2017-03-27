@@ -61,7 +61,7 @@
 					</div>
 					<div class="row">
 						<div class="form-input">
-							<label for="header">Subject:<span class="red">*</span></label>
+							<label for="header">Topic:<span class="red">*</span></label>
 							<input id="topic" data-required="yes" type="text" name="topic">
 							<span class="err-message"></span>
 						</div>

@@ -2,35 +2,35 @@ package ru.koshevoy.model;
 
 
 public class Review {
-    private String Name;
-    private String Company;
+    private String name;
+    private String company;
     private String email;
-    private String Message;
+    private String message;
 
     public Review() {
     }
 
     public Review(String name, String company, String email, String message) {
-        Name = name;
-        Company = company;
+        this.name = name;
+        this.company = company;
         this.email = email;
-        Message = message;
+        this.message = message;
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 
     public String getCompany() {
-        return Company;
+        return company;
     }
 
     public void setCompany(String company) {
-        Company = company;
+        this.company = company;
     }
 
     public String getEmail() {
@@ -42,10 +42,10 @@ public class Review {
     }
 
     public String getMessage() {
-        return Message;
+        return message;
     }
 
     public void setMessage(String message) {
-        Message = message;
+        this.message = message;
     }
 }
