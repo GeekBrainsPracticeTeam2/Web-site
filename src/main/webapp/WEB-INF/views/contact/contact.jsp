@@ -44,7 +44,7 @@
 <article itemscope itemtype="http://schema.org/Article">
 	<header class="jumbotron subhead" id="overview">
 	<div class="container">
-	<h1 itemprop="name">Thank you for your interest in Bain & Company. Please contact us using the information below. Main office </h1>
+	<h1 itemprop="name">Thank you for your interest in our Company. Please contact us using the information below. Main office </h1>
 	</div>
 	</header>
 

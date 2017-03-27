@@ -14,6 +14,9 @@
 <body data-spy="scroll" data-target=".bs-docs-sidebar">
 <c:url value="/index.html" var="index"/>
 <c:url value="/about.html" var="about"/>
+<c:url value="/contact.html" var="contact"/>
+<c:url value="/reviews.html" var="reviews"/>
+<c:url value="/tech.html" var="tech"/>
 
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
