@@ -3,17 +3,17 @@ package ru.koshevoy.model;
 
 public class Review {
     private String name;
-    private String company;
     private String email;
+    private String subject;
     private String message;
 
     public Review() {
     }
 
-    public Review(String name, String company, String email, String message) {
+    public Review(String name, String email, String subject, String message) {
         this.name = name;
-        this.company = company;
         this.email = email;
+        this.subject = subject;
         this.message = message;
     }
 
@@ -25,20 +25,20 @@ public class Review {
         this.name = name;
     }
 
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
-    }
-
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
     public String getMessage() {

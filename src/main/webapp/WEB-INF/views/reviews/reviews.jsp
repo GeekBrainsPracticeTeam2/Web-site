@@ -46,43 +46,42 @@
 	<div class="container clearfix">
 		<h1 class="mt">Ask a Question</h1>
 			<div class="ask-question-container">
-				<form class="ask-qustion" id="ask_question" action="" novalidate="">
+				<form:form modelAttribute="reviews" class="ask-qustion" id="ask_question" novalidate="" action="/reviews" method="post">
+				   <fieldset>
 					<div class="row clearfix">
 						<div class="form-input">
-							<label for="name">Your name:<span class="red">*</span></label>
-							<input type="text" data-required="yes" id="author" name="author">
+							<form:label for="name">Your name:<span class="red">*</span></form:label>
+							<form:input type="text" data-required="yes" id="name" name="name" path="name">
 							<span class="err-message"></span>
 						</div>
 						<div class="form-input">
-							<label for="email">E-mail:<span class="red">*</span></label>
-							<input type="email" data-required="yes" id="email" name="email">
+							<form:label for="email">E-mail:<span class="red">*</span></form:label>
+							<form:input type="email" data-required="yes" id="email" name="email" path="email">
 							<span class="err-message"></span>
 						</div>
 					</div>
 					<div class="row">
 						<div class="form-input">
-							<label for="header">Topic:<span class="red">*</span></label>
-							<input id="topic" data-required="yes" type="text" name="topic">
+							<form:label for="subject">Subject:<span class="red">*</span></form:label>
+							<form:input id="subject" data-required="yes" type="text" name="subject"  path="subject">
 							<span class="err-message"></span>
 						</div>
 					</div>
 					<div class="row">
 						<div class="form-input">
-							<label for="message">Message:<span class="red">*</span></label>
-							<textarea id="message" data-required="yes" type="text" name="message"></textarea>
+							<form:label for="message">Message:<span class="red">*</span></form:label>
+							<form:textarea id="message" data-required="yes" type="text" name="message"  path="message"></textarea>
 							<span class="err-message"></span>
 						</div>
 					</div>
 					<div class="row clearfix">
-						<div class="captcha-container-question">
-							<div id="captchaField" class="g-recaptcha" data-sitekey="6LeUOxETAAAAAACGG3uEvIuQN2HApdetB3E0dtEI" style="width:302px; height:76px"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LeUOxETAAAAAACGG3uEvIuQN2HApdetB3E0dtEI&amp;co=aHR0cDovL2JhbmsuZmFrdHVyYS5ydTo4MA..&amp;hl=ru&amp;v=r20170320152239&amp;size=normal&amp;cb=yaplbz2v7l47" title="виджет reCAPTCHA" width="304" height="78" frameborder="0" scrolling="no" name="undefined"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
-						</div>
 						<div class="form-input sbm-btn">
 							<button id="submit" class="btn btn-default" type="submit">Send</button>
 						</div>
 					</div>
-				</form>
-			<div class="success" id="success">
+					</fieldset>
+				</form:form>
+			    <div class="success" id="success">
 				<p id="success-message"></p>
 			</div>
 		</div>
@@ -109,3 +108,5 @@
 
 </body>
 </html>
+
+

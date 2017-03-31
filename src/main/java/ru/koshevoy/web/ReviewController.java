@@ -16,11 +16,20 @@ import java.util.List;
 public class ReviewController {
     private final Logger logger = LoggerFactory.getLogger(MainController.class);
 
+    @RequestMapping(value="/reviews", method=RequestMethod.GET)
+    public String getReview() {
+
+        logger.debug("index() is executed!");
+
+        return "reviews/reviews";
+    }
+
     @RequestMapping(value="/reviews", method=RequestMethod.POST)
     public String greetingSubmit(@ModelAttribute Review review, Model model) {
         List<Review> reviewsList = new ArrayList<Review>();
-        model.addAttribute("reviews", review);
-        return "reviews";
+        reviewsList.add(review);
+        model.addAttribute("review", review);
+        return "reviews/result";
     }
 
 }

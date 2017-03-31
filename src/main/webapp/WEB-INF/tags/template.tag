@@ -41,6 +41,8 @@
     <footer>
         <div class="row">
             <div class="col-lg-12">
+                <a href="<%=request.getContextPath()%>?languageVar=en">EN</a>
+                <a href="<%=request.getContextPath()%>?languageVar=ru">RU</a>
                 <p>&copy; ru.koshevoy 2017</p>
             </div>
         </div>
