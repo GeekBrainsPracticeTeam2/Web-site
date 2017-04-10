@@ -6,17 +6,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
+import java.util.ArrayList;
+
 @Service
 public class ReviewService {
 
     private static final Logger logger = LoggerFactory.getLogger(ReviewService.class);
 
-    public String getDesc() {
-
-        logger.debug("getDesc() is executed!");
-
-        return "Gradle + Spring MVC Hello World Example";
-
+    public String getListReviews(ArrayList listReviews){
+        listReviews.forEach(value -> System.out.println(value));
+        return "";
     }
 
     public String getTitle(String name) {

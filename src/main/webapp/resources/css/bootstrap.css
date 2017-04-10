@@ -6757,4 +6757,101 @@ button.close {
     display: none !important;
   }
 }
+/***** Ask question *****/
+.ask-question-container, .registrationForm{
+	margin-bottom: 80px;
+}
+.ask-question-container .success,
+.ask-qustion, .registrationForm{
+	background: #fcfcfc;
+	border:1px solid #d7d7d7;
+	padding: 40px 23px;
+}
+.ask-qustion label{
+	width: 116px;
+	display: inline-block;
+	text-align: right;
+	vertical-align: top;
+	margin-top: 16px;
+}
+.ask-qustion textarea,
+.ask-qustion input{
+	width: 751px;
+}
+.ask-qustion-alert{
+	font:0.9375em open_sansregular;
+	max-width: 724px;
+	margin-bottom: 25px;
+}
+.ask-qustion-alert>a{
+	text-decoration: underline;
+	color:#666;
+}
+.ask-qustion-alert>a:hover{
+	color:#ee395c;
+}
+.form-input{
+	float: left;
+	margin-right: 11px;
+}
+.form-input:last-child{
+	margin-right: 0px;
+}
+form label{
+	font:.875em open_sansregular;
+	color:#454545;
+	margin-right: 20px;
+}
+.ask-qustion input[name="author"]{
+	width: 360px;
+}
+#ask_question .form-input label{
+    margin-right: 10px;
+}
+.ask-qustion input[name="email"]{
+	width: 202px;
+}
+.ask-qustion input[name="CaptchaCode"]{
+	width: 222px;
+}
+.red{
+	color:#ee395c;
+}
+form .row{
+	margin-bottom: 10px;
+}
+textarea{
+	resize:none;
+	min-height: 80px;
+}
+
+.captcha{
+	width:230px;
+	height:47px;
+}
+.btn{
+	padding: 13px 28px;
+	font: .9375em open_sansregular;
+	border:none;
+	height: 48px;
+}
+.btn-default{
+	background: #a0b5cb;
+	color:#fcfcfc;
+}
+.btn-default:hover{
+	background: #859cb5;
+}
+.btn-default:active{
+	background: #6986a4;
+}
+.btn-default-disabled{
+	background: #ddd;
+}
+.ask-qustion .sbm-btn{
+	float: right;
+    margin-right:10px;
+}
+
+
 /*# sourceMappingURL=bootstrap.css.map */
